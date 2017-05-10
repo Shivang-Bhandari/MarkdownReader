@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -14,7 +14,7 @@
   <header>
     <nav>
       <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo center">Markdown Reader</a>
+        <a href="index.html" class="brand-logo thin center">Markdown Reader</a>
       </div>
     </nav>
   </header>
@@ -22,6 +22,7 @@
   <main>
     <div class="row" style="display:flex;">
       <section class=" col s12 m6 l6">
+        <h3 class="thin center">Enter your markdown</h3>
         <form class="col s12">
           <div class="row">
             <div class="input-field col s12">
@@ -30,12 +31,19 @@
             </div>
           </div>
         </form>
+
+        <button class="btn right" style="margin:0.75rem" onclick="download('myfilename.md', 'text/plain')">Download Markdown</button>
+
       </section>
 
-    <section class="col s12 m6 l6 container" id="markdown"></section>
+    <section class="col s12 m6 l6 container markdownOutput" id="markdown">
+      <h3 class="thin center">Markdown Preview</h3>
+      <section id="markdownOut">
+
+      </section>
+    </section>
     </div>
 
-    <button class="btn" onclick="download('myfilename.md', 'text/plain')">Download Markdown</button>
 
   </main>
 

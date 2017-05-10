@@ -1,5 +1,5 @@
     var md = document.getElementById('input');
-    var output = document.getElementById('markdown');
+    var output = document.getElementById('markdownOut');
     md.onkeyup = function() {
       var parsed = marked(md.value);
       output.innerHTML = "";
