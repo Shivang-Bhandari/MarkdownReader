@@ -1,5 +1,5 @@
 body {
-  background-color: #e0e0e0;
+  /*background-color: #e0e0e0;*/
 }
 
 
@@ -45,4 +45,10 @@ body {
   font-weight: 600;
   line-height: 1.25;
   color: #6a737d;
+}
+
+.box {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin: 10px 10px 0 10px;
 }

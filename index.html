@@ -21,7 +21,7 @@
 
   <main>
     <div class="row" style="display:flex;">
-      <section class=" col s12 m6 l6">
+      <section class="col s12 m6 l6 box">
         <h3 class="thin center">Enter your markdown</h3>
         <form class="col s12">
           <div class="row">
@@ -32,17 +32,21 @@
           </div>
         </form>
 
-        <button class="btn right" style="margin:0.75rem" onclick="download('myfilename.md', 'text/plain')">Download Markdown</button>
 
       </section>
 
-    <section class="col s12 m6 l6 container markdownOutput" id="markdown">
+    <section class="col s12 m6 l6 container markdownOutput box" id="markdown">
       <h3 class="thin center">Markdown Preview</h3>
       <section id="markdownOut">
 
       </section>
     </section>
     </div>
+    <div class="center-align">
+      <button class="btn " style="margin:0.75rem" onclick="download('myfilename.md', 'text/plain')">Download Markdown</button>
+
+    </div>
+
 
 
   </main>
